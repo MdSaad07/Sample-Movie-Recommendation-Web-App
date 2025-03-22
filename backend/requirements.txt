@@ -1,0 +1,7 @@
+express
+mongoose
+cors
+bcrypt
+jsonwebtoken
+dotenv
+@huggingface/inference

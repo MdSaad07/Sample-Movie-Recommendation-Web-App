@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.search-bar {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.chatbot-btn, .logout-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.chatbot-btn:hover, .logout-btn:hover {
+  background-color: #b20710;
+}
+
+/* Movie List */
+.movie-app {
+  padding-top: 80px;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.movie-card {
+  background: #1c1c1c;
+  padding: 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card h3 {
+  color: #e50914;
+}
+
+.movie-card p {
+  margin: 5px 0;
+}
+
+/* Chatbot Modal */
+.chatbot-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatbot-content {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.chat-messages {
+  height: 200px;
+  overflow-y: auto;
+  background: #333;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.user-msg {
+  text-align: right;
+  color: #e50914;
+}
+
+.bot-msg {
+  text-align: left;
+  color: #0f0;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  resize: none;
+}
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn{
+  margin-right: 3rem;
+}
+
+.close-btn {
+  background-color: #e50914;
+  color: white;
+  margin-top: 10px;
+}
+
+.close-btn:hover {
+  background-color: #b20710;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .search-bar {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .chatbot-content {
+    width: 90%;
+  }
+
+  .movie-card {
+    width: 100%;
+  }
+}
